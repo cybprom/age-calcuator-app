@@ -22,6 +22,11 @@ html {
 
 body {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  font-size: 3.2rem;
   background-color: var(--neutral-off-white);
 }
 
@@ -31,4 +36,6 @@ body {
 
 .card-select__date {
   border-bottom: 1px solid var(--neutral-off-white);
+  width: 60rem;
+  padding: 2rem 3rem;
 }
