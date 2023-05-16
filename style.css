@@ -21,6 +21,7 @@ html {
 }
 
 body {
+  display: flex;
   background-color: var(--neutral-off-white);
 }
 
