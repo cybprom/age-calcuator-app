@@ -8,6 +8,8 @@
   --neutral-light-grey: hsl(0, 0%, 86%);
   --neutral-smokey-grey: hsl(0, 1%, 44%);
   --neutral-off-black: hsl(0, 0%, 8%);
+
+  --poppins: "poppins";
 }
 
 * {
@@ -26,16 +28,99 @@ body {
   align-items: center;
   flex-direction: column;
   height: 100vh;
-  font-size: 3.2rem;
+  font-size: 2.2rem;
+  font-family: var(--poppins);
   background-color: var(--neutral-off-white);
 }
 
 .card-main {
   background-color: var(--neutral-white);
+  width: 60rem;
+  padding: 3rem 4rem;
+  border-radius: 1.5rem 1.5rem 12rem 1.5rem;
 }
 
 .card-select__date {
-  border-bottom: 1px solid var(--neutral-off-white);
-  width: 60rem;
-  padding: 2rem 3rem;
+  border-bottom: 2px solid var(--neutral-off-white);
+  position: relative;
+  display: flex;
+  gap: 3rem;
+  padding: 2.5rem 0rem;
+}
+
+label {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.4rem;
+  color: var(--neutral-smokey-grey);
+}
+
+input {
+  width: 10rem;
+  padding: 1.2rem;
+  border: 0.5px solid var(--neutral-light-grey);
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+}
+input:focus,
+input:active {
+  border: 0.5px solid var(--primary-purple);
+}
+
+input[type="text"] {
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+input::placeholder {
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.date-input {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.error {
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.btn-arrow {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translateY(50%);
+  border: 0;
+  height: 8rem;
+  width: 8rem;
+  border-radius: 50%;
+  background-color: var(--primary-purple);
+}
+
+.btn-arrow:hover {
+  background-color: var(--neutral-off-black);
+  transition: all ease-in 0.3s;
+}
+
+.years-estimated {
+  margin-top: 3rem;
+  line-height: 1.1;
+}
+
+.estimated-content {
+  font-size: 7rem;
+  font-weight: 800;
+  text-transform: lowercase;
+}
+
+p span {
+  color: var(--primary-purple);
+  letter-spacing: 0.2rem;
+  font-size: 7.5rem;
 }
