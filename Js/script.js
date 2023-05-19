@@ -68,31 +68,6 @@ arrowBtn.addEventListener("click", () => {
   let months;
   let days;
 
-  // When any of the field is empty
-  //   if (isNaN(day) && isNaN(month) && isNaN(year)) {
-  //     errorDay.textContent = "This field is required.";
-  //     errorMonth.textContent = "This field is required.";
-  //     errorYear.textContent = "This field is required.";
-  //     // Change error message color
-  //     errorDay.style.color = "hsl(0, 100%, 67%)";
-  //     errorMonth.style.color = "hsl(0, 100%, 67%)";
-  //     errorYear.style.color = "hsl(0, 100%, 67%)";
-
-  //     errorDay.style.border = "hsl(0, 100%, 67%)";
-  //     errorMonth.style.border = "hsl(0, 100%, 67%)";
-  //     errorYear.style.border = "hsl(0, 100%, 67%)";
-
-  //     labelDay.style.color = "hsl(0, 100%, 67%)";
-  //     labelMonth.style.color = "hsl(0, 100%, 67%)";
-  //     labelYear.style.color = "hsl(0, 100%, 67%)";
-  //   } else if (day < 1 || day > 31) {
-  //     errorDay.textContent = "must be a valid day.";
-  //     console.log("Day not between 1 - 31");
-  //   } else if (month < 1 || month > 12) {
-  //     errorMonth.textContent = "must be a valid month.";
-  //     console.log("None of the above");
-  //   }
-
   // catching day error
   // If field is empty, if num. not between 1 - 31, if date is invalid e.g 31/04/1998 (there are just 30days in april)
   if (isNaN(day)) {
@@ -179,11 +154,16 @@ arrowBtn.addEventListener("click", () => {
     months = actualMonth - month;
     days = actualDay - day;
 
-    console.log(age, months, days, actualMonth);
+    console.log(age, months, days);
 
-    if (months < 0) {
+    if (months < 0 || (months === 0 && days < 0)) {
       age--;
       months = 12 - Math.abs(months);
+    }
+
+    if (days < 0) {
+      months--;
+      days = 30 - Math.abs(days);
     }
 
     yearText.innerHTML = `${age}`;

@@ -123,4 +123,5 @@ p span {
   color: var(--primary-purple);
   letter-spacing: 0.2rem;
   font-size: 7.5rem;
+  margin-right: 10px;
 }
