@@ -154,7 +154,7 @@ arrowBtn.addEventListener("click", () => {
     months = actualMonth - month;
     days = actualDay - day;
 
-    console.log(age, months, days);
+    // console.log(age, months, days);
 
     if (months < 0 || (months === 0 && days < 0)) {
       age--;

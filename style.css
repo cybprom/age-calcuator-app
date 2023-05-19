@@ -126,13 +126,19 @@ p span {
   margin-right: 10px;
 }
 
-@media screen and (max-width: 750px) {
-  /* body {
-    width: 50%;
-    padding: 0 6rem;
-    margin: 0 auto;
-  } */
+footer {
+  width: 100%;
+  padding: 0 2rem;
+}
 
+.attribution {
+  font-size: 1.2rem;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 9rem;
+}
+
+@media screen and (max-width: 750px) {
   .card-main {
     width: 37rem;
   }
@@ -182,7 +188,7 @@ p span {
 
   .estimated-content {
     margin-bottom: 0.5rem;
-    font-size: 4rem;
+    font-size: 5rem;
     font-weight: 800;
   }
 
