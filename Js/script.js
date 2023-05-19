@@ -179,10 +179,15 @@ arrowBtn.addEventListener("click", () => {
     months = actualMonth - month;
     days = actualDay - day;
 
-    console.log(age, months, days);
+    console.log(age, months, days, actualMonth);
+
+    if (months < 0) {
+      age--;
+      months = 12 - Math.abs(months);
+    }
 
     yearText.innerHTML = `${age}`;
-    monthText.innerHTML = `${month}`;
+    monthText.innerHTML = `${months}`;
     daysText.innerHTML = `${days}`;
   }
 });
