@@ -166,8 +166,8 @@ arrowBtn.addEventListener("click", () => {
       days = 30 - Math.abs(days);
     }
 
-    yearText.innerHTML = `${age}`;
-    monthText.innerHTML = `${months}`;
-    daysText.innerHTML = `${days}`;
+    yearText.innerHTML = `${age}`.padStart(2, 0);
+    monthText.innerHTML = `${months}`.padStart(2, 0);
+    daysText.innerHTML = `${days}`.padStart(2, 0);
   }
 });
