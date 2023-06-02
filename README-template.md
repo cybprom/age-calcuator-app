@@ -37,7 +37,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://age-calculator-0.netlify.app/)
+- Solution URL: [Age Calculator](https://age-calculator-0.netlify.app/)
 - Live Site URL: [Add live site URL here](https://age-calculator-0.netlify.app/)
 
 ## My process
@@ -48,7 +48,6 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
 - [Next.js](https://nextjs.org/) - React framework
 
 ### What I learned
